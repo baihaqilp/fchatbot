@@ -10,9 +10,9 @@
 apply plugin: 'java-library'
 apply plugin: 'application'
 
-archivesBaseName = "dunk"
+archivesBaseName = "fchatbot"
 version = '1.0.0'
-mainClassName = "com.clivern.dunk.Main"
+mainClassName = "com.baihaqilp.fchatbot.Main"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -27,13 +27,13 @@ dependencies {
     compile 'com.sparkjava:spark-core:2.6.0'
     compile 'org.slf4j:slf4j-api:1.7.13'
     compile 'org.slf4j:slf4j-simple:1.7.13'
-    compile 'com.clivern:racter:1.0.2'
+    compile 'com.baihaqilp:racter:1.0.2'
 }
 
 //create a single Jar with all dependencies
 task fatJar(type: Jar) {
 	manifest {
-        attributes 'Implementation-Title': 'Dunk ChatBot',
+        attributes 'Implementation-Title': 'Facebook ChatBot',
         	'Implementation-Version': version,
         	'Main-Class': mainClassName
     }
